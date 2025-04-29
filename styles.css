@@ -405,7 +405,7 @@ footer p {
     color: rgb(255, 255, 255);
     font-weight: 100;
     transition: color 0.3s;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Hover Effect */
@@ -413,6 +413,9 @@ footer p {
     color: #9f78ec;
 }
 
+.address{
+    font-size: 1rem;
+}
 footer .copyright {
     width: 100%;
     text-align: center;
