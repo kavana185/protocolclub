@@ -1,0 +1,153 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Text */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(142, 67, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Links */
+.navbar a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(67, 64, 69);
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 1.25rem;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    color: #3d00b6;
+}
+
+/* Contact Button Style */
+.contact-btn {
+    background-color: rgb(142, 67, 212);
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white !important;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background-color: #410d6f;
+}
+
+
+/* Event Cards */
+.eventcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+#events {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff; /* dark background */
+    color: rgb(0, 0, 0);
+    
+}
+
+#events h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(142, 67, 212);
+    position: relative;
+    display: inline-block;
+}
+
+#events h2::after {
+    content: '';
+    display: block;
+    margin: 10px auto 0;
+    width: 175px; /* ~inch wide */
+    height: 4px;
+    background-color: rgb(142, 67, 212);
+    border-radius: 2px;
+}
+
+.event-card {
+    background-color: #ffffffc3;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(142, 67, 212, 0.2);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 250px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.event-card h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #171616;
+}
+
+.event-card p {
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: #332f2f;
+}
+
+.event-card p:last-of-type {
+    color: #cd0000; /* lighter for date */
+    font-weight: bold;
+    font-style: italic;
+}
+
+.event-card button {
+    background-color: rgb(142, 67, 212);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.event-card button:hover {
+    background-color: rgb(112, 47, 182);
+}
